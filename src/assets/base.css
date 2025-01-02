@@ -1,0 +1,144 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.login_container {
+  display: grid; /* 그리드 레이아웃 사용 */
+  grid-template-columns: 3fr 3fr; /* 첫 번째 열을 2fr로 설정하여 이미지 공간을 더 넓게 설정 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 90vh;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.login_image {
+  max-width: 500px; /* 최대 너비를 약간 증가 */
+  max-height: 100%; /* 최대 높이는 그대로 유지 */
+  object-fit: cover; /* 이미지를 잘라내어 컨테이너에 맞춤 */
+  margin-right: 40px; /* 오른쪽 여백 */
+  border-radius: 10%;
+  opacity: 1; /* 초기 opacity를 1로 설정하여 즉시 보이게 함 */
+  transition: opacity 1s; /* 부드러운 전환을 위한 opacity 애니메이션 */
+}
+
+.fading-out {
+  opacity: 0; /* 페이드 아웃 효과 */
+}
+
+.fading-in {
+  opacity: 1; /* 페이드 인 효과 */
+}
+
+.login_box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding-left: 70px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  padding-right: 70px;
+  width: 360px;
+  text-align: center;
+  position: relative;
+  border-radius: 1%;
+}
+
+.instagram_title {
+  font-family: 'Billabong', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+}
+
+.input_field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  font-size: 14px;
+  height: 30px;
+}
+.input_group {
+  text-align: center;
+  margin-right: 19px;
+}
+
+.login_button {
+  width: 320px;
+  padding: 10px;
+  background-color: #0095f6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 44px;
+}
+
+.login_button:hover {
+  background-color: #007ac3;
+}
+
+.login_password {
+  font-size: 15px;
+  color: #323232;
+  text-decoration: none;
+  margin-bottom: 65px;
+}
+
+.regsiter_prompt {
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.regsiter {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex-grow: 1;
+  background-color: #ccc;
+  margin: 0 15px;
+}
+
+.or_text {
+  color: #565656;
+  font-size: 14px;
+}
+.error_message {
+  color: red; /* 오류 메시지를 빨간색으로 설정 */
+  font-size: 1rem; /* 크기를 조금 작게 설정 */
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* 버튼과의 간격 추가 */
+}
